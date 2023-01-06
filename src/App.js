@@ -89,6 +89,25 @@ export default class App extends Lightning.Component {
         },
         type: HTMLText,
       },
+      Debug: {
+        x: 50,
+        y: 600,
+        text: {
+          fontSize: 28,
+          textColor: 0xff999999,
+        },
+      },
     };
+  }
+
+  _build() {
+    this._debug = this.tag("Debug");
+
+    this._justified = this.tag("Justified");
+    this._justified.on("txLoaded", () => {
+      const { finalW, finalH } = this._justified;
+      const text = `Justified text size is ${finalW} x ${finalH}`;
+      this._debug.patch({ text });
+    });
   }
 }
