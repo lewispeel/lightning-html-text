@@ -1,0 +1,7 @@
+{
+  "name": "com.lewispeel.htmltext",
+  "description": "HTML Text",
+  "dependencies": {
+    "@lightningjs/sdk": "^5.2.0"
+  }
+}
