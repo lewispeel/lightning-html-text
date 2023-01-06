@@ -21,6 +21,8 @@ A [custom font loader](https://github.com/lewispeel/lightning-html-text/blob/mai
 
 The [`HTMLText`](https://github.com/lewispeel/lightning-html-text/blob/main/src/HTMLText.js) component uses [`<foreignObject>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) to embed HTML into an SVG which is then drawn to a 2D canvas and attached to a Lightning texture.
 
+SVGs aren't allowed to load external resources so Base64 encoded fonts are required for this approach to work.
+
 #### Example
 
 ```javascript
