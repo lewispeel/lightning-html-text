@@ -2,6 +2,8 @@
 
 This (very rough) demo shows how you can use SVGs to render HTML text. I saw this technique used in [pixi.js](https://github.com/pixijs/html-text) and wondered if it could be applied in Lightning.
 
+<img alt="html text" src="./.github/resources/demo.png">
+
 ### Getting started
 
 > Before you follow the steps below, make sure you have the
