@@ -23,7 +23,7 @@ The [`HTMLText`](https://github.com/lewispeel/lightning-html-text/blob/main/src/
 
 #### Example
 
-```
+```javascript
 Justified: {
     x: 50,
     y: 200,
