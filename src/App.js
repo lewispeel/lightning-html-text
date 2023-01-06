@@ -84,6 +84,7 @@ export default class App extends Lightning.Component {
           "line-height": "48px",
           "max-width": "400px",
           "text-align": "justify",
+          "text-shadow": "1px 2px black",
           "word-wrap": true,
         },
         type: HTMLText,
