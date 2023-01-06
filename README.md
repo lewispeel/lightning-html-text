@@ -17,11 +17,9 @@ Use `lng dev` to start the watcher and run a local webserver / open the App in a
 
 ### How it works
 
-A [custom font loader](https://github.com/lewispeel/lightning-html-text/blob/main/src/index.js#L18) is needed to converted each font file to a Base64 encoded string as they're loaded into the browser.
-
 The [`HTMLText`](https://github.com/lewispeel/lightning-html-text/blob/main/src/HTMLText.js) component uses [`<foreignObject>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) to embed HTML into an SVG which is then drawn to a 2D canvas and attached to a Lightning texture.
 
-SVGs aren't allowed to load external resources so Base64 encoded fonts are required for this approach to work.
+SVGs aren't allowed to load external resources so Base64 encoded fonts are required for this approach to work. A [custom font loader](https://github.com/lewispeel/lightning-html-text/blob/main/src/index.js#L18) is needed to converted each font file to a Base64 encoded string as they're loaded into the browser.
 
 #### Example
 
