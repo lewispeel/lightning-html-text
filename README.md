@@ -24,24 +24,28 @@ The [`HTMLText`](https://github.com/lewispeel/lightning-html-text/blob/main/src/
 #### Example
 
 ```javascript
-Justified: {
-    x: 50,
-    y: 200,
-    htmlText:
-        "Lorem ipsum dolor sit amet, &#x1F680; <b>consectetur adipiscing elit</b>. Phasellus porta nisi est, vitae <i>sagittis ex gravida ac</i>. Sed vitae malesuada neque.",
-    style: {
-        color: "white",
-        "font-family": "Roboto",
-        "font-size": "32px",
-        "letter-spacing": "3px",
-        "line-height": "48px",
-        "max-width": "400px",
-        "text-align": "justify",
-        "text-shadow": "1px 2px black",
-        "word-wrap": true,
-    },
-    type: HTMLText,
-},
+static _template() {
+    return {
+        Justified: {
+            x: 50,
+            y: 200,
+            htmlText:
+                "Lorem ipsum dolor sit amet, &#x1F680; <b>consectetur adipiscing elit</b>. Phasellus porta nisi est, vitae <i>sagittis ex gravida ac</i>. Sed vitae malesuada neque.",
+            style: {
+                color: "white",
+                "font-family": "Roboto",
+                "font-size": "32px",
+                "letter-spacing": "3px",
+                "line-height": "48px",
+                "max-width": "400px",
+                "text-align": "justify",
+                "text-shadow": "1px 2px black",
+                "word-wrap": true,
+            },
+            type: HTMLText,
+        },
+    };
+}
 ```
 
 ### Disclaimer
